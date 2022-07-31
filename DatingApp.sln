@@ -3,15 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{C3A1530A-CF59-4D90-A40C-40287D902A72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{C3A1530A-CF59-4D90-A40C-40287D902A72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E07FCF72-0804-4319-B5BE-617253C8F6A3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4AF2544-BAD4-49E3-B31B-051F78ACD338}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -33,5 +32,11 @@ Global
 		{C3A1530A-CF59-4D90-A40C-40287D902A72}.Release|x64.Build.0 = Release|Any CPU
 		{C3A1530A-CF59-4D90-A40C-40287D902A72}.Release|x86.ActiveCfg = Release|Any CPU
 		{C3A1530A-CF59-4D90-A40C-40287D902A72}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4AF2544-BAD4-49E3-B31B-051F78ACD338}
 	EndGlobalSection
 EndGlobal
