@@ -1,0 +1,7 @@
+.icon {
+    background: url(../../../assets/images/bg-error3.png) no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
