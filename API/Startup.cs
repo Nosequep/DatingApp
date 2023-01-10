@@ -3,6 +3,7 @@ using API.Errors.Middleware;
 using API.Extensions;
 using API.Interfaces;
 using API.Services;
+using API.SignalR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -52,15 +53,17 @@ namespace API
             {
                 policy.AllowAnyHeader()
                   .AllowAnyMethod()
+                  .AllowCredentials()
                   .WithOrigins("http://localhost:4200");
             });
 
-            app.UseAuthentication(); 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<PresenceHub>("hubs/presence");
             });
         }
     }
